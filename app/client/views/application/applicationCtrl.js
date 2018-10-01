@@ -137,26 +137,26 @@ angular.module('reg')
                   prompt: 'Please select your graduation year.'
                 }
               ]
-            },
-            gender: {
-              identifier: 'gender',
-              rules: [
-                {
-                  type: 'empty',
-                  prompt: 'Please select a gender.'
-                }
-              ]
-            },
-            adult: {
-              identifier: 'adult',
-              rules: [
-                {
-                  type: 'allowMinors',
-                  prompt: 'You must be an adult, or an MIT student.'
-                }
-              ]
             }
-          }
+//             gender: {
+//               identifier: 'gender',
+//               rules: [
+//                 {
+//                   type: 'empty',
+//                   prompt: 'Please select a gender.'
+//                 }
+//               ]
+//             },
+//             adult: {
+//               identifier: 'adult',
+//               rules: [
+//                 {
+//                   type: 'allowMinors',
+//                   prompt: 'You must be an adult, or an MIT student.'
+//                 }
+//               ]
+//             }
+//           }
         });
       }
 

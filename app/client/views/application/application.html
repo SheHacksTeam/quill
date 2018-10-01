@@ -26,6 +26,19 @@
                  name="name"
                  ng-model="user.profile.name">
         </div>
+          
+          <div class="field">
+          <label>My pronouns are:</label>
+          <select
+            name="pronouns"
+            ng-model="user.profile.pronouns">
+            <option value="">Pronouns</option>
+            <option value="she/her">she/her</option>
+            <option value="they/them">they/them</option>
+            <option value="ze/zir">ze/zir</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
         <div class="field" ng-show="autoFilledSchool">
           <label> School </label>
@@ -71,16 +84,48 @@
           </select>
         </div> -->
 
+          <div class="field">
+          <label>Please pick your top 3 skills from the list below:</label>
+         <div class="ui checkbox">
+            <input type="checkbox" id="Java" ng-model="user.profile.skills">
+            <label for="Java">Java</label>
+           <input type="checkbox" id="Python" ng-model="user.profile.skills">
+            <label for="Python">Python</label>
+           <input type="checkbox" id="JavaScript" ng-model="user.profile.skills">
+            <label for="JavaScript">JavaScript</label>
+           <input type="checkbox" id="Design" ng-model="user.profile.skills">
+            <label for="Design">Design</label>
+           <input type="checkbox" id="UX/UI" ng-model="user.profile.skills">
+            <label for="UX/UI">UX/UI</label>
+           <input type="checkbox" id="Web Development" ng-model="user.profile.skills">
+            <label for="Web Development">Web Development</label>
+           <input type="checkbox" id="Android" ng-model="user.profile.skills">
+            <label for="Android">Android</label>
+           <input type="checkbox" id="iOS" ng-model="user.profile.skills">
+            <label for="iOS">iOS</label>
+           <input type="checkbox" id="Mobile Development" ng-model="user.profile.skills">
+            <label for="Mobile Development">Mobile Development</label>
+           <input type="checkbox" id="AR/VR" ng-model="user.profile.skills">
+            <label for="AR/VR">AR/VR</label>
+           <input type="checkbox" id="Machine Learning" ng-model="user.profile.skills">
+            <label for="Machine Learning">Machine Learning</label>
+           <input type="checkbox" id="Unity" ng-model="user.profile.skills">
+            <label for="Unity">Unity</label>
+           <input type="checkbox" id="React" ng-model="user.profile.skills">
+            <label for="React">React</label>
+          </div>
+        </div>
+          
         <div class="field">
-          <label>I would describe myself as a...</label>
+          <label>What are you most interested in?</label>
           <input type="text"
-                 placeholder="Designer, Data Scientist, iOS Wizard, Hacker Extraordinaire"
+                 placeholder="Machine Learning, AR/VR, Mobile Apps, Web Development, Interaction Design"
                  ng-model="user.profile.description">
         </div>
 
         <div class="field">
           <label>
-              What would you like to learn or get out of TechTogether Boston? (optional)
+              What would you like to learn or get out of TechTogether Boston?
           </label>
           <textarea ng-model="user.profile.essay">
           </textarea>

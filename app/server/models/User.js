@@ -45,11 +45,11 @@ var profile = {
     }
   },
 
-  description: {
-    type: String,
-    min: 0,
-    max: 300
-  },
+//   description: {
+//     type: String,
+//     min: 0,
+//     max: 300
+//   },
 
   essay: {
     type: String,

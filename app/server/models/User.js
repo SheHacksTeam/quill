@@ -12,14 +12,27 @@ var profile = {
     min: 1,
     max: 100,
   },
-
-  adult: {
-    type: Boolean,
-    required: true,
-    default: false,
+    
+  birth: {
+    type: String,
+    min: 1,
+    max: 100,
   },
+  
+  pronouns: {
+    type: String,
+    enum: {
+      values: 'she/her they/them ze/zir other'.split(' '),
+    }
+  },
+    
+//   adult: {
+//     type: Boolean,
+//     required: true,
+//     default: false,
+//   },
 
-  school: {
+  schoolOrCompany: {
     type: String,
     min: 1,
     max: 150,
@@ -28,7 +41,7 @@ var profile = {
   graduationYear: {
     type: String,
     enum: {
-      values: '2019 2020 2021 2022'.split(' '),
+      values: '2019 2020 2021 2022 other NA'.split(' '),
     }
   },
 

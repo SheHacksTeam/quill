@@ -120,12 +120,30 @@ angular.module('reg')
                 }
               ]
             },
-            school: {
-              identifier: 'school',
+            birth: {
+              identifier: 'birth',
               rules: [
                 {
                   type: 'empty',
-                  prompt: 'Please enter your school name.'
+                  prompt: 'Please enter your date of birth.'
+                }
+              ]
+            },
+            pronouns: {
+              identifier: 'pronouns',
+              rules: [
+                {
+                  type: 'empty',
+                  prompt: 'Please select your pronouns.'
+                }
+              ]
+            },
+            schoolOrCompany: {
+              identifier: 'schoolOrCompany',
+              rules: [
+                {
+                  type: 'empty',
+                  prompt: 'Please enter your school or company name.'
                 }
               ]
             },
@@ -134,7 +152,7 @@ angular.module('reg')
               rules: [
                 {
                   type: 'empty',
-                  prompt: 'Please select your graduation year.'
+                  prompt: 'Please select your graduation year (if applicable).'
                 }
               ]
             }

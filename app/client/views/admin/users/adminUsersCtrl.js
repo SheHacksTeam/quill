@@ -218,19 +218,29 @@ angular.module('reg')
               {
                 name: 'Name',
                 value: user.profile.name
+              },
+//               {
+//                 name: 'Gender',
+//                 value: user.profile.gender
+//               },
+              {
+                name: 'Date of Birth',
+                value: user.profile.birth
               },{
-                name: 'Gender',
-                value: user.profile.gender
+                name: 'Pronouns',
+                value: user.profile.pronouns
               },{
-                name: 'School',
-                value: user.profile.school
+                name: 'School or Company',
+                value: user.profile.schoolOrCompany
               },{
                 name: 'Graduation Year',
                 value: user.profile.graduationYear
-              },{
-                name: 'Description',
-                value: user.profile.description
-              },{
+              },
+//               {
+//                 name: 'Description',
+//                 value: user.profile.description
+//               },
+              {
                 name: 'Essay',
                 value: user.profile.essay
               }

@@ -88,8 +88,35 @@
                name="name"
                ng-model="selectedUser.profile.name">
       </div>
+      
+      <div class="field">
+          <label> Date of Birth </label>
+          <input type="text"
+                 name="birth"
+                 ng-model="selectedUser.profile.birth">
+        </div>
+          
+          <div class="field">
+          <label>My pronouns are:</label>
+          <select
+            name="pronouns"
+            ng-model="selectedUser.profile.pronouns">
+            <option value="">Pronouns</option>
+            <option value="she/her">she/her</option>
+            <option value="they/them">they/them</option>
+            <option value="ze/zir">ze/zir</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
-      <div class="field" ng-show="autoFilledSchool">
+          <div class="field">
+          <label> What school or company are you from? </label>
+          <input type="text"
+                 name="schoolOrCompany"
+                 ng-model="selectedUser.profile.schoolOrCompany">
+        </div>
+
+<!--       <div class="field" ng-show="autoFilledSchool">
         <label> School </label>
         <input class="ui input"
                disabled="disabled"
@@ -102,7 +129,7 @@
         <input class="ui input"
                name="school"
                ng-model="selectedUser.profile.school">
-      </div>
+      </div> -->
 
       <div class="field">
         <label>Graduation Year</label>
@@ -114,6 +141,8 @@
           <option value="2020">2020</option>
           <option value="2021">2021</option>
           <option value="2022">2022</option>
+          <option value="other">Other</option>
+          <option value="NA">Not Applicable</option>
         </select>
       </div>
 
@@ -130,12 +159,12 @@
         </select>
       </div> -->
 
-      <div class="field">
+<!--       <div class="field">
         <label>I would describe myself as a...</label>
         <input type="text"
                placeholder="Designer, Data Scientist, iOS Wizard, Hacker Extraordinaire"
                ng-model="selectedUser.profile.description">
-      </div>
+      </div> -->
 
       <div class="field">
         <label>

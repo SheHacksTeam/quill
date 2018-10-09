@@ -243,6 +243,18 @@ angular.module('reg')
               {
                 name: 'Essay',
                 value: user.profile.essay
+              },
+              {
+                name: 'Travelling From',
+                value: user.profile.travel
+              },
+              {
+                name: 'Reimbursement',
+                value: user.profile.reimburse
+              },
+              {
+                name: 'Bus',
+                value: user.profile.bus
               }
             ]
           },{

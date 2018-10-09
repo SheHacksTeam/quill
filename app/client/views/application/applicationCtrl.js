@@ -155,6 +155,33 @@ angular.module('reg')
                   prompt: 'Please select your graduation year (if applicable).'
                 }
               ]
+            },
+            travel: {
+              identifier: 'travel',
+              rules: [
+                {
+                  type: 'empty',
+                  prompt: 'Please enter where you are travelling from.'
+                }
+              ]
+            },
+            reimburse: {
+              identifier: 'reimburse',
+              rules: [
+                {
+                  type: 'empty',
+                  prompt: 'Please select "yes" if you require travel reimbursement, otherwise, select "no".'
+                }
+              ]
+            },
+            bus: {
+              identifier: 'bus',
+              rules: [
+                {
+                  type: 'empty',
+                  prompt: 'Please select "yes" if you would take a bus, otherwise, select "no".'
+                }
+              ]
             }
 //             gender: {
 //               identifier: 'gender',

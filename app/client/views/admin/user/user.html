@@ -173,6 +173,33 @@
         <textarea ng-model="selectedUser.profile.essay">
         </textarea>
       </div>
+      
+      <div class="field">
+          <label> Where are you travelling from? </label>
+          <input type="text"
+                 name="travel"
+                 ng-model="selectedUser.profile.travel">
+        </div>
+          
+          <div class="field">
+          <label> Do you require travel reimbursements? </label>
+          <select
+            name="reimburse"
+            ng-model="selectedUser.profile.reimburse">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+          
+          <div class="field">
+          <label> We will be sending buses to NYC. If we were to send a bus to your city, would you take it? </label>
+          <select
+            name="bus"
+            ng-model="selectedUser.profile.bus">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
 
 <!--       <div class="field"
            ng-hide="isMitStudent">

@@ -56,6 +56,26 @@ var profile = {
     min: 0,
     max: 1500
   },
+    
+  travel: {
+    type: String,
+    min: 1,
+    max: 150,
+  },
+    
+  reimburse: {
+    type: String,
+    enum: {
+      values: 'yes no'.split(' '),
+    }
+  },
+  
+   bus: {
+    type: String,
+    enum: {
+      values: 'yes no'.split(' '),
+    }
+   }
 
 //   // Optional info for demographics
 //   gender: {
